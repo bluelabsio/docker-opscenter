@@ -19,7 +19,8 @@ RUN	\
   ln -s /opt/opscenter/log /var/log/opscenter;
 
 # Expose ports
-EXPOSE 8888
+# See http://www.datastax.com/documentation/opscenter/5.1/opsc/reference/opscPorts_r.html
+EXPOSE 8888 61620
 
 WORKDIR /opt/opscenter
 
